@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIFY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ласкаво просимо до нашого магазину АРТ-матеріалів - ARTIFY!</h1>
+    <p>У нас є найкращі АРТ-товари для вашої душі й фантазій!</p>
+    <h3>Найкращі пропозиції для вас:</h3>
+    <div class="product-row">
+    <div class="product">
+        <img src="https://content.rozetka.com.ua/goods/images/big/396518386.png" alt="маркери">
+        <h3>Маркери спиртові - Touch Five</h3>
+        <p>Портативний інструмент для наповнення ваших шедервів яскравими барвами! (60 шт.)</p>
+        <p class="price"> Ціна: 450 грн.</p>
+    </div>
+    <div class="product">
+        <img src="https://content2.rozetka.com.ua/goods/images/big/165715216.jpg" alt="Скетчбук">
+        <h3>Скетчбук для графіки - Talents Art Creation </h3>
+            <p> Зручний, якісний блокнот для малювання графікою. Ідеальний для подорожей та довгих поїздок! (80 арк.)</p>
+            <p class="price"> Ціна: 215 грн.</p>
+        </div>
+    <div class="product">
+        <img src="https://content1.rozetka.com.ua/goods/images/big/521857035.jpg" alt="Олівці">
+        <h3>Набір простих олівців - 12 шт.</h3>
+        <p> Основа для кожного малюнку! </p>
+        <p class="price"> Ціна: 90 грн. </p>
+    </div>
+    <div class="product"> 
+    <img src="https://content.rozetka.com.ua/goods/images/big/497990716.jpg" alt="Фарби">
+    <h3>Фарби акварельні - 36 кольорів + пензлик!</h3>
+    <p> Насичені, яскраві кольори, підійдуть як початківцям, так і професіоналам!</p>
+    <p class="price"> Ціна: 170 грн. </p>
+</div>
+</div>
+
+<br>
+<hr>
+<br>
+<form action="result.html" method="get id="orderForm" class="order-form">
+    <h2> Готові зробити покупку? </h2>
+    <p>Оформіть замовлення нижче:</p> 
+
+    <label for="first-name">Ваше ім'я:</label>
+<input type="text" name="first_name" id="first-name" placeholder="Введіть своє ім'я" required>
+
+<label for="last-name">Ваше прізвище:</label>
+<input type="text" name="last_name" id="last-name" placeholder="Введіть своє призвіще" required>
+
+<label for="address">Адреса:</label>
+<input type="text" name="address" id="address" placeholder="Введіть вашу адресу" required>
+
+<label for="АРТ-product">Виберіть АРТ-товар:</label>
+<select id="ART-product" name="ART_product" required>
+<option value="" disabled selected>Виберіть товар...</option>
+<option value="pencils">Олівці</option>
+<option value="paint">Фарби</option>
+<option value="sketchbook">Блокнот</option>
+<option value="markers">Маркери</option>
+<option value="liner">Лайнер</option>
+<option value="rubber">Гумка</option>
+<option value="etc">...</option>
+</select>
+
+<p>Виберіть розмір набору:</p>
+<div class="products-number"> 
+    <input type="radio" id="small" name="size" value="small" required>
+    <label for="small">Малий</label>
+
+    <input type="radio" id="medium" name="size" value="medium" >
+    <label for="medium">Середній</label>
+
+    <input type="radio" id="big" name="size" value="big" >
+    <label for="big">Великий</label>
+</div>
+
+<p>Додаткові опції:</p>
+<div class="checkbox-options"> 
+<input type="checkbox" id="stickers" name="stickerss" value="yes">
+<label for="stickers">Стікери у подарунок</label>
+<input type="checkbox" id="QR-code" name="QR_code">
+<label for="QR-code">QR код- на надихаючу музику для створення арту!</label>
+</div>
+
+<label for="comments">Коментар до замовлення:</label>
+<textarea name="comments" id="comments" placeholder="Напишіть ваші побажання, або запитання" rows="4"></textarea>
+
+<button type="submit"> Оформити покупку!</button>
+</form>
+
+<script src="scripts.js"></script>
+
+<h3>Наші контакти:</h3>
+<ul class="list">
+    <li>ARTIFY.SHOP@gmail.com</li>
+    <li>+380 66 4890 27  </li>
+ </ul>
+</body>
+</html>
